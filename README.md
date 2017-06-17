@@ -8,3 +8,6 @@ yarn install
 使用前需要配置```mongodb```
 
 为了迁移方便上传到了```git```(bad idea)
+
+![](1.gif)
+![](2.gif)
