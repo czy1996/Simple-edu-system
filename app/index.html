@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>教务系统</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../css/photon.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- Javascript -->
+    <script src="js/gua.js" charset="utf-8"></script>
+    <!-- <script src="js/index.js" charset="utf-8"></script> -->
+
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">教务系统</h1>
+
+        <div class="toolbar-actions">
+          <button id='id-btn-quit' class="btn btn-negative pull-right">
+            <span class="icon icon-cancel icon-text"></span>
+            退出
+          </button>
+        </div>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="helion-container">
+          <h1 class='helion-title'>教务系统</h1>
+          <div class="helion-tab">
+            <a id='id-a-student' href="#" class='active'>学生</a>
+            <a id='id-a-teacher' href="#" class=''>老师</a>
+
+          </div>
+          <form class="form-student form-active">
+            <div class="form-group">
+              <!-- <label>Email address</label> -->
+              <input type="text" class='form-control userType' value="学生" readonly="readonly" />
+            </div>
+            <div class="form-group">
+              <!-- <label>Email address</label> -->
+              <input type="email" class="form-control id" placeholder="学号">
+            </div>
+            <div class="form-group">
+              <!-- <label>Password</label> -->
+              <input type="password" class="form-control password" placeholder="密码">
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-form btn-default">Cancel</button>
+              <button type="submit" class="btn btn-form btn-primary button-submit">OK</button>
+            </div>
+          </form>
+          <form class="form-teacher">
+            <div class="form-group">
+              <!-- <label>Email address</label> -->
+              <input type="text" class='form-control userType' value="教师" readonly="readonly" />
+            </div>
+            <div class="form-group">
+              <!-- <label>Email address</label> -->
+              <input type="email" class="form-control id" placeholder="教师号">
+            </div>
+            <div class="form-group">
+              <!-- <label>Password</label> -->
+              <input type="password" class="form-control password" placeholder="密码">
+            </div>
+            <div class="form-actions">
+              <button type="submit" class="btn btn-form btn-default">Cancel</button>
+              <button type="submit" class="btn btn-form btn-primary button-submit">OK</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <script src="js/login.js" charset="utf-8"></script>
+
+  </body>
+</html>

@@ -1,0 +1,40 @@
+header {
+  -webkit-app-region: drag
+}
+header button {
+  -webkit-app-region: no-drag;
+}
+
+.helion-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.helion-title {
+  text-align: center;
+}
+
+.helion-tab a {
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.active {
+  color: dodgerblue;
+}
+
+.form-student {
+  display: none;
+}
+
+.form-teacher {
+  display: none;
+}
+
+.form-active {
+  display: block;
+}

@@ -1,0 +1,13 @@
+{
+  "name": "jiaowuxitong",
+  "version": "1.0.0",
+  "description": "教务系统",
+  "main": "main.js",
+  "author": "陈梓扬 王中一",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {
+    "mongoose": "^4.10.6"
+  }
+}

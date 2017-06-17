@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Photon</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../../css/photon.min.css">
+    <link rel="stylesheet" href="../../css/teacher.css">
+
+    <!-- <link rel="stylesheet" href="../../css/index.css"> -->
+
+    <!-- Javascript -->
+  </head>
+  <body>
+    <div class="window">
+
+      <!-- .toolbar-header sits at the top of your app -->
+      <header class="toolbar toolbar-header">
+        <h1 class="title">教务系统</h1>
+
+        <div class="toolbar-actions">
+          <button id='id-btn-quit' class="btn btn-negative pull-right">
+            <span class="icon icon-cancel icon-text"></span>
+            退出
+          </button>
+        </div>
+      </header>
+
+      <!-- Your app's content goes inside .window-content -->
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane pane-sm sidebar">
+            <nav class="nav-group">
+              <h5 class="nav-group-title">功能</h5>
+              <span class="nav-group-item active" data-pane='pane-course'>
+                <span class="icon icon-home"></span>
+                添加课程
+              </span>
+              <span class="nav-group-item" data-pane='pane-score'>
+                <span class="icon icon-light-up active"></span>
+                成绩登记
+              </span>
+            </nav>
+          </div>
+
+          <div class="pane pane-course">
+            <input type="hidden" name="" value="" id='id-teacher'>
+            <div class="toolbar">
+              <div class="toolbar-actions pull-right">
+                <div class="btn-group">
+                  <button class='btn btn-default' id='btn-course-add'>
+                    <span class='icon icon-plus'></span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <table class="table-striped">
+              <thead>
+                <tr>
+                  <th>考试科目</th>
+                </tr>
+              </thead>
+              <tbody id='course-tbody'>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="pane pane-score hide">
+            <input type="hidden" name="" value="" id='id-teacher'>
+            <!-- <div class="toolbar">
+              <div class="toolbar-actions pull-right">
+                <div class="btn-group">
+                  <button class='btn btn-default' id='btn-course-add'>
+                    <span class='icon icon-plus'></span>
+                  </button>
+                </div>
+              </div>
+            </div> -->
+            <div class="pane-group">
+              <div class="pane-sm sidebar" id='nav-courses'>
+                <ul class="list-group">
+                  <li class="list-group-header">
+                    <input class="form-control" type="text" placeholder="Search">
+                  </li>
+                  <li class="list-group-item">
+                    <div class="media-body">
+                      <strong>油层物理</strong>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="pane">
+                <table class="table-striped">
+                  <thead>
+                    <tr>
+                      <th>学生姓名</th>
+                      <th>成绩</th>
+                    </tr>
+                  </thead>
+                  <tbody id='score-tbody'>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src='../js/gua.js'></script>
+    <script src='../js/teacher.js'></script>
+  </body>
+</html>
